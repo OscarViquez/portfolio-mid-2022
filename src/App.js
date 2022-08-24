@@ -1,3 +1,4 @@
+import './App.reset.css'
 import './App.css';
 import React from 'react';
 import Navbar from './components/common/Navbar/Navbar.common'
