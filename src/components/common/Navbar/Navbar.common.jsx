@@ -1,41 +1,61 @@
 import React from "react";
+import { useState } from "react";
 import "./Navbar.common.css";
+import logo from "../../../assets/images/website-logo.svg";
 
 const Navbar = () => {
+  const [toggleVisibility, setToggleVisibility] = useState(true);
+
+  const toggleMenu = () => {
+    toggleVisibility ? setToggleVisibility(false) : setToggleVisibility(true);
+    console.log("inside toggle", toggleVisibility);
+  };
+
+  const untoggleMenu = () => {
+    setToggleVisibility(true);
+  };
+
   return (
     <header>
       <div className="header-wrapper">
         <div className="nav-logo-wrapper">
           <img
-            src="https://d33wubrfki0l68.cloudfront.net/73bdad8c89a3a0f1a7f675756af406dfbbae55d1/4f664/images/branding/oshv-logo-emblem.svg"
+            src={logo}
             alt="Logo Of Oscar Website"
           />
+
+          <button className="navbar-toggle" onClick={toggleMenu}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
         </div>
 
-        <nav className="nav">
-          <ul className="nav-list">
-            <li className="nav-item">
-              <span>
-                <a href="/">About</a>
-              </span>
-            </li>
-            <li className="nav-item">
-              <span>
-                <a href="/">About</a>
-              </span>
-            </li>
-            <li className="nav-item">
-              <span>
-                <a href="/">About</a>
-              </span>
-            </li>
-            <li className="nav-item nav-item--cta">
-              <span>
-                <a href="/">About</a>
-              </span>
-            </li>
-          </ul>
-        </nav>
+        <ul
+          className={
+            toggleVisibility ? "navbar-list navbar-display-none" : "navbar-list"
+          }
+        >
+          <li className="navbar-item">
+            <span>
+              <a href="#about" onClick={untoggleMenu}>
+                About
+              </a>
+            </span>
+          </li>
+          <li className="navbar-item">
+            <span>
+              <a href="#skills" onClick={untoggleMenu}>
+                Skills
+              </a>
+            </span>
+          </li>
+          <li className="navbar-item">
+            <span>
+              <a href="#projects" onClick={untoggleMenu}>
+                Projects
+              </a>
+            </span>
+          </li>
+        </ul>
       </div>
     </header>
   );

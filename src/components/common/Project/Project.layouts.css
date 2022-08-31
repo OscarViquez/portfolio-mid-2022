@@ -1,0 +1,122 @@
+.project {
+  padding: 2vh 1rem 17vh 1rem;
+  color: #ffffff;
+  background: #000;
+}
+
+.project-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 
+  ==============================================
+    PROJECT === LAYOUT
+  ==============================================
+*/
+.project-wrapper--top {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  border-top: #ffffff solid 2px;
+}
+
+.project-info-wrapper,
+.project-desc-wrapper {
+  width: 50%;
+  padding: 4rem 0;
+}
+
+.project-image {
+  width: 100%;
+}
+
+/* 
+  ==============================================
+    PROJECT === TYPOGRAPH | STYLING
+  ==============================================
+*/
+
+.project-info-wrapper > h2 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: var(--fs-para-2);
+  font-weight: 500;
+}
+
+.project-info-wrapper > h3 {
+  font-size: var(--fs-header-2);
+  font-weight: 500;
+}
+
+.project-demo-link {
+  padding: 0.7rem 0;
+  margin-top: 1rem;
+
+  display: inline-block;
+  width: 150px;
+
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+
+  background: linear-gradient(90.7deg, #5cf676 37.05%, #8ad7f5 70.36%);
+  background-size: 250% 100%;
+
+  
+  border-radius: 5px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
+.project-demo-link:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.project-demo-link:focus {
+  outline: none;
+}
+
+.project-desc-wrapper > p {
+  max-width: 33.75rem;
+  font-size: var(--fs-para-3);
+}
+
+/* 
+  ==============================================
+    MEDIA QUERY | BREAK POINT: 680px
+  ==============================================
+*/
+@media (max-width: 42.5em) {
+  .project {
+    padding: 2vh 1rem 7vh 1rem;
+  }
+  /* 
+  ==============================================
+    PROJECT === LAYOUT
+  ==============================================
+*/
+  .project-wrapper--top {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .project-info-wrapper,
+  .project-desc-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .project-info-wrapper {
+    margin: 3.5rem 0 2.5rem 0;
+  }
+}

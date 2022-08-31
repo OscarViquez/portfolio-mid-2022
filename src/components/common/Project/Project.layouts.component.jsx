@@ -6,18 +6,18 @@ const Project = (props) => {
 
   return (
     <article className="project">
-      <div className="project-wrapper">
+      <div className="project-wrapper--top project-wrapper">
         {/* ========================== */}
 
         <div className="project-info-wrapper">
           <h2>{project_type}</h2>
           <h3>{project_name}</h3>
-          <a href={project_demoLink} className="project-demo-link">
+          <a href={project_demoLink} target="_blank" className="project-demo-link">
             Live Demo
           </a>
         </div>
 
-        <div className="project-text-wrapper">
+        <div className="project-desc-wrapper">
           <p>{project_desc}</p>
         </div>
 

@@ -4,7 +4,7 @@ import "./About.layouts.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-wrapper">
         <div className="about-text-container">
           <h2>

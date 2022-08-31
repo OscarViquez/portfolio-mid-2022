@@ -1,5 +1,5 @@
 .hero {
-  background: radial-gradient(53.29% 65.89% at 37.33% 23.56%, #000000 0%, #3A3124 100%);
+  background: #000000;
   padding: 20vh 3.75rem 15vh 3.75rem;
 }
 
@@ -75,8 +75,51 @@
   letter-spacing: 1px;
 }
 
+.hero-cta-container > a {
+  padding: 1rem;
+  border-radius: 50px;
+
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.hero-cta-container > a:hover  {
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out !important;
+
+  background-color: #fff;
+  color: #000000;
+}
+
 .hero-cta-container > a >  img {
   padding-left: 0.7rem;
+}
+
+.hero-cta-container > a >  img:hover {
+  fill: #000;
+}
+
+.hero-cta-arrow {
+  display: none;
+
+  moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.hero-cta-arrow--active {
+  moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+
+  display: inline-block;
+
 }
 
 /* 
@@ -97,10 +140,9 @@
   background-clip: text;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .hero {
-    background-color: #1b1b1b;
-    padding: 20vh 1rem 21vh 1rem;
+    padding: 20vh 1rem 10vh 1rem;
   }
 
   .hero-top-container {

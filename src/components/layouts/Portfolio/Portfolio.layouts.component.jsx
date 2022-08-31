@@ -5,8 +5,10 @@ import "./Portfolio.layouts.css";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
-      <h2>Featured Projects</h2>
+    <section className="portfolio" id="portfolio">
+      <div className="portfolio-title-wrapper">
+        <h2>Featured Projects</h2>
+      </div>
 
       {ProjectsData.map((project) => {
         return <Project content={project} key={project.project_id} />;

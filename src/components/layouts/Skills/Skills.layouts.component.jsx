@@ -16,7 +16,7 @@ import iconMYSQL from '../../../assets/images/icon-mysql.png';
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="skills-wrapper">
         <h2>My Skills &amp; Tech</h2>
 

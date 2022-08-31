@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   padding: 2vh 3.75rem;
-  background: linear-gradient(180deg, #3b3224 4.45%, #000000 47.93%);
+  background: #000000;
 }
 
 /* 
@@ -64,7 +64,6 @@
 @media (max-width: 860px) {
   .about {
     padding: 14vh 1rem;
-    background: linear-gradient(180deg, #3b3224 4.45%, #000000 47.93%);
   }
 
   .about-text-container {

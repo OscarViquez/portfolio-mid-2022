@@ -3,9 +3,20 @@
 /* Header */
 /* **************************************************** */
 header {
-  background-color: var(--primary-color);;
-  color: var(--second-color);
-  padding: 1rem 0.7rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+
+  box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
 }
 
 .header-wrapper {
@@ -14,6 +25,7 @@ header {
 
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -29,31 +41,86 @@ header {
 
 /* Navbar Content Container */
 /* **************************************************** */
-.nav {
-  width: 80%;
-}
 
-.nav-list {
-  width: 100%;
+.navbar-list {
+  width: 80%;
   display: inline-flex;
   justify-content: right;
   gap: 0.7rem;
 }
 
 .nav-item {
-  /* width: 100px; */
-
   cursor: pointer;
   text-align: center;
 }
 
-.nav-item > a {
-  padding: 0.5rem 1.2rem;
-
-  font-size: var(--text-xs);
-  font-weight: 500;
-
-  border: #0f1216 solid 1px;
-  border-radius: 5px;
+.navbar-toggle {
+  border: none;
+  background: none;
+  font-size: 1.4rem;
 }
 
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.navbar-item {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-item > span > a:hover {
+  text-decoration: underline;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 1rem;
+  }
+  .header-wrapper {
+    flex-flow: column wrap;
+  }
+
+  .nav-logo-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-display-none {
+    display: none;
+    transition: all 0.4s ease-in-out !important;
+  }
+
+  .navbar-background-overlay {
+    background: rgba(24, 24, 24, 0.6);
+    height: 100vh;
+  }
+
+  .fa-bars {
+    display: block;
+    color: #fff;
+  }
+
+  .navbar-list {
+    background-color: #111111;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3rem 0;
+  }
+
+  .navbar-item {
+    width: 90%;
+    text-align: right;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+}

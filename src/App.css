@@ -9,7 +9,7 @@
   --max-width-wrapper: 1440px;
 
   /* 1 : Biggest - 5: Lowest */
-  --fs-header-1: clamp(3.2rem, calc(-3.3rem + 12.22vw), 6.88rem);
+  --fs-header-1: clamp(3.2rem, calc(-3.3rem + 12.22vw), 7.5rem);
   /* clamp(2.31rem, calc(-2.60rem + 11.41vw), 6.88rem) */
   --fs-header-2: clamp(2.25rem, calc(1.42rem + 2.22vw), 3rem);
   --fs-header-3: clamp(1rem, calc(0.72rem + 0.74vw), 1.25rem);
@@ -34,8 +34,6 @@
   */
 * {
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  background-color: #000000;
 }
 
 h1,
