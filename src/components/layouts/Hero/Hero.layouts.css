@@ -1,0 +1,120 @@
+.hero {
+  background: radial-gradient(53.29% 65.89% at 37.33% 23.56%, #000000 0%, #3A3124 100%);
+  padding: 20vh 3.75rem 15vh 3.75rem;
+}
+
+.hero-wrapper {
+  max-width: var(--max-width-wrapper);
+  margin: 0 auto;
+}
+
+/* 
+  ==============================================
+  HERO-TOP-ROLE === LAYOUT
+  ==============================================
+*/
+
+.hero-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.7rem;
+}
+
+.hero-top-role {
+  width: 50%;
+}
+
+.hero-top-fname {
+  width: 50%;
+}
+
+/* 
+  ==============================================
+  HERO-TOP-ROLE === TYPOGRAPH
+  ==============================================
+  *** .hero-top-fname > h1 : First name
+  *** .hero-top-role > h2 : The Job Title
+  *** .hero-top-role > p : Description
+*/
+
+.hero-top-fname > h1 {
+  font-size: var(--fs-header-1);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  text-align: right;
+
+  background: var(--linear-bg-title);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-top-role > h2 {
+  color: #a3f491;
+  font-size: var(--fs-header-3);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.hero-top-role > p {
+  color: #fff;
+  font-size: var(--fs-para-3);
+  font-weight: 500;
+  max-width: 25em;
+}
+
+.hero-cta-container {
+  margin-top: 3rem;
+
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.hero-cta-container > a >  img {
+  padding-left: 0.7rem;
+}
+
+/* 
+  ==============================================
+  HERO-BOTTOM-ROLE
+  ==============================================
+  *** .hero-bottom-container > h2 : Last name
+*/
+
+.hero-bottom-container > h2 {
+  font-size: var(--fs-header-1);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  background-image: var(--linear-bg-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-color: #1b1b1b;
+    padding: 20vh 1rem 21vh 1rem;
+  }
+
+  .hero-top-container {
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  .hero-top-role,
+  .hero-top-fname {
+    width: 100%;
+  }
+
+  .hero-top-fname > h1, .hero-bottom-container > h2 {
+    text-align: left;
+  }
+}

@@ -1,0 +1,87 @@
+.skills {
+  padding: 2vh 3.75rem 17vh 3.75rem;
+  background-color: #000;
+}
+
+/* 
+  ==============================================
+    SKILLS === LAYOUT
+  ==============================================
+*/
+.skills-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.skills-icons {
+  display: flex;
+  flex-flow: row nowrap;
+
+  width: 100%;
+}
+
+.skills-icons-lists {
+  width: 28%;
+}
+
+.skills-icons-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 
+  ==============================================
+    ABOUT === TYPOGRAPH
+  ==============================================
+*/
+.skills-wrapper > h2 {
+  font-size: var(--fs-header-2);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.skills-icons-item > span {
+  display: block;
+  font-size: var(--fs-para-2);
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 
+  ==============================================
+    MEDIA QUERY | BREAK POINT: 780px
+  ==============================================
+*/
+@media (max-width: 48.75em) {
+  .skills {
+    padding: 2vh 1rem 17vh 1rem;
+  }
+
+  .skills-icons-lists {
+    width: 33%;
+  }
+
+  .skills-icons-item > img {
+    width: 40px;
+  }
+}
+
+/* 
+  ==============================================
+    MEDIA QUERY | BREAK POINT: 630px
+  ==============================================
+*/
+@media (max-width: 39.375em) {
+  .skills-icons {
+    flex-flow: row wrap;
+  }
+  .skills-icons-lists {
+    width: 50%;
+  }
+}
