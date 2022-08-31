@@ -3,28 +3,41 @@ import "./Navbar.common.css";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="nav-logo-wrapper"></div>
+    <header>
+      <div className="header-wrapper">
+        <div className="nav-logo-wrapper">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/73bdad8c89a3a0f1a7f675756af406dfbbae55d1/4f664/images/branding/oshv-logo-emblem.svg"
+            alt="Logo Of Oscar Website"
+          />
+        </div>
 
-      <div className="nav-wrapper">
-
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="/">About</a>
-          </li>
-          <li className="nav-item">
-            <a href="/">Project</a>
-          </li>
-          <li className="nav-item">
-            <a href="/">Contact Me</a>
-          </li>
-        </ul>
-        
+        <nav className="nav">
+          <ul className="nav-list">
+            <li className="nav-item">
+              <span>
+                <a href="/">About</a>
+              </span>
+            </li>
+            <li className="nav-item">
+              <span>
+                <a href="/">About</a>
+              </span>
+            </li>
+            <li className="nav-item">
+              <span>
+                <a href="/">About</a>
+              </span>
+            </li>
+            <li className="nav-item nav-item--cta">
+              <span>
+                <a href="/">About</a>
+              </span>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 

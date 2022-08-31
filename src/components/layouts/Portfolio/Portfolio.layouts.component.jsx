@@ -1,10 +1,18 @@
-import React from 'react'
-import './Portfolio.layouts.css'
+import React from "react";
+import Project from "../../common/Project/Project.layouts.component";
+import { ProjectsData } from "./Portfolio.data";
+import "./Portfolio.layouts.css";
 
 const Portfolio = () => {
   return (
-    <div> Portfolio </div>
-  )
-}
+    <section className="portfolio">
+      <h2>Featured Projects</h2>
 
-export default Portfolio
+      {ProjectsData.map((project) => {
+        return <Project content={project} key={project.project_id} />;
+      })}
+    </section>
+  );
+};
+
+export default Portfolio;

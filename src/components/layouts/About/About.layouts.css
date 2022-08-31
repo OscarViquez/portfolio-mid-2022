@@ -1,0 +1,94 @@
+.about {
+  width: 100%;
+  padding: 2vh 3.75rem;
+  background: linear-gradient(180deg, #3b3224 4.45%, #000000 47.93%);
+}
+
+/* 
+  ==============================================
+    ABOUT === LAYOUT
+  ==============================================
+*/
+
+.about-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text-container {
+  width: 55%;
+}
+
+.about-img-container {
+  width: 45%;
+}
+
+/* 
+  ==============================================
+    ABOUT === TYPOGRAPH
+  ==============================================
+*/
+
+.about-text-container > h2 {
+  font-size: clamp(2.25rem, calc(1.42rem + 2.22vw), 3rem);
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  color: #fff;
+}
+
+.about-text-container > p {
+  font-weight: 400;
+  font-size: clamp(1rem, calc(0.42rem + 0.74vw), 1.25rem);
+  color: #fff;
+
+  line-height: 2.1;
+  letter-spacing: 0.01em;
+
+  max-width: 38em;
+}
+
+.about-img-container > img {
+  width: 100%;
+}
+
+/* 
+  ==============================================
+    MEDIA QUERIES
+  ==============================================
+*/
+@media (max-width: 860px) {
+  .about {
+    padding: 14vh 1rem;
+    background: linear-gradient(180deg, #3b3224 4.45%, #000000 47.93%);
+  }
+
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-img-container {
+    width: 100%;
+
+  }
+
+  .about-img-container > img {
+    width: 100%;
+    max-width: 400px;
+
+  }
+  
+}
+
+
+@media (max-width: 600px) {
+  .about-img-container > img {
+    max-width: none;
+    width: 100%;
+  }
+  
+}
