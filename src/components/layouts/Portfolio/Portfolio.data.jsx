@@ -9,7 +9,7 @@ export const ProjectsData = [
     project_type: "01. Landing Page",
     project_name: "Puerto Vallarta",
     project_desc:
-      "Hi, my name is Lu Yu, I am a designer working in visual communication, with a focus on interaction design & art direction. I was raised in China, and have spent time living and working in Melbourne.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     project_demoLink: "https://puerto-vallarta-ohviquez.netlify.app/",
     project_image: puertoVallarta
   },
@@ -18,7 +18,7 @@ export const ProjectsData = [
     project_type: "02. Ecommerce Store",
     project_name: "Drinkify : Online Drinks",
     project_desc:
-      "Hi, my name is Lu Yu, I am a designer working in visual communication, with a focus on interaction design & art direction. I was raised in China, and have spent time living and working in Melbourne.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     project_demoLink: "https://drinkify-it.netlify.app/",
     project_image: drinkify
   },
@@ -27,7 +27,7 @@ export const ProjectsData = [
     project_type: "03. Full Stack Website",
     project_name: "Tranquil : HOPE Project",
     project_desc:
-      "Hi, my name is Lu Yu, I am a designer working in visual communication, with a focus on interaction design & art direction. I was raised in China, and have spent time living and working in Melbourne.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     project_demoLink: "https://tranquil-hh13.herokuapp.com/",
     project_image: tranquil
   },
@@ -36,7 +36,7 @@ export const ProjectsData = [
     project_type: "04. Multi-Page Website",
     project_name: "Quick Bytes",
     project_desc:
-      "Hi, my name is Lu Yu, I am a designer working in visual communication, with a focus on interaction design & art direction. I was raised in China, and have spent time living and working in Melbourne.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     project_demoLink: "https://quickbytes-code4justice.netlify.app/",
     project_image: quickBytes
   },

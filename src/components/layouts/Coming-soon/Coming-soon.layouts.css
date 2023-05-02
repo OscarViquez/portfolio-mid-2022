@@ -1,0 +1,28 @@
+.coming-soon {
+  background: #000000;
+}
+
+.coming-soon-wrapper {
+  max-width: var(--max-width-wrapper);
+  padding: 23vh 3.75rem 23vh 3.75rem;
+  margin: 0 auto;
+  border: #fff 3px solid;
+  border-radius: 5px;
+}
+
+.portfolio-title-wrapper {
+  padding: 0 0 3rem 4vw;
+}
+
+.portfolio-title-wrapper > h2 {
+  font-size: var(--fs-header-2);
+  font-weight: 500;
+  color: #fff;
+}
+
+.coming-soon-title {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 4rem;
+}

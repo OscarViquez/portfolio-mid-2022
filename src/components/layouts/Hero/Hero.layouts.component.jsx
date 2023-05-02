@@ -24,10 +24,10 @@ const Hero = () => {
         {/* =================================================================== */}
         <div className="hero-top-container">
           <div className="hero-top-role">
-            <h2>FRONT END DEVELOPER</h2>
+            <h2>WEB DEVELOPER</h2>
             <p>
-              We're Blume. We're all up in your bathroom with products that are
-              good for your body and the environment.
+              I love using my unique design and coding skills to create awesome
+              looking websites.
             </p>
           </div>
           {/* =================================================================== */}
@@ -49,10 +49,9 @@ const Hero = () => {
             onMouseOut={handleMouseOut}
           >
             See Projects
-
             <img
               className={
-                isHovering ? "hero-cta-arrow"  : "hero-cta-arrow--active"
+                isHovering ? "hero-cta-arrow" : "hero-cta-arrow--active"
               }
               src={arrowWhite}
               alt="Hello"

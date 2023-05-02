@@ -9,10 +9,11 @@ const Footer = () => {
         <div className="footer-wrapper-col">
           <h2>Oscar Hernandez-Viquez</h2>
           <p>
-            Hi, my name is Lu Yu, I am a designer working in visual
-            communication, with a focus on interaction design & art direction. I
-            was raised in China, and have spent time living and working in
-            Melbourne.
+            I'm Web Developer utilizing code and visual designs to solve
+            problems, create growth, and opportunities for business and brands.
+            I love the tech field because it is one of the industries that is
+            involved in not just tech companies, but also other companies in different industries.
+            For example airline, food, finance, and sport.
           </p>
 
           {/* <div className="footer-socials">
@@ -22,7 +23,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="footer-wrapper-col">
-          <img src={logo} alt="logo"/>
+          <img src={logo} alt="logo" />
         </div>
       </div>
 

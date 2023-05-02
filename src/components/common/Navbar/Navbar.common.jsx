@@ -50,7 +50,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item">
             <span>
-              <a href="#projects" onClick={untoggleMenu}>
+              <a href="#portfolio" onClick={untoggleMenu}>
                 Projects
               </a>
             </span>

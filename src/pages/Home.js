@@ -5,6 +5,7 @@ import Skills from '../components/layouts/Skills/Skills.layouts.component'
 import Portfolio from '../components/layouts/Portfolio/Portfolio.layouts.component'
 import Footer from '../components/common/Footer/Footer.common'
 import Navbar from '../components/common/Navbar/Navbar.common'
+import ComingSoon from '../components/layouts/Coming-soon/Coming-soon.layouts.component'
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Hero />
       <About />
       <Skills />
-      <Portfolio />
+      <ComingSoon/>
+      {/* <Portfolio /> */}
       <Footer />
     </main>
   )
